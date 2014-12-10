@@ -1,5 +1,6 @@
 package created.ParseTree.Program;
 
+import created.MainFrame;
 import created.ParseTree.Array.*;
 import created.ParseTree.Arte.*;
 import created.ParseTree.Literals.*;
@@ -76,6 +77,7 @@ public abstract class super_yaya extends created.iNode
             {
                 ((utos_block.utosBlock) u).evaluate(this.sl, WatchManager.STANDALONE, WatchManager.NOT_IN_A_FUNCTION );
             }
+            MainFrame.input.getHighlighter().removeAllHighlights();
         }
     }
     

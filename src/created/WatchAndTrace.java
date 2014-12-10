@@ -76,7 +76,7 @@ public class WatchAndTrace extends javax.swing.JFrame implements ActionListener{
         jScrollPane1 = new javax.swing.JScrollPane();
         listTable = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
 
         nextButton.setText("Next");
         nextButton.addActionListener(new java.awt.event.ActionListener() {
@@ -143,7 +143,6 @@ public class WatchAndTrace extends javax.swing.JFrame implements ActionListener{
         MainFrame.input.getHighlighter().removeAllHighlights();
         this.dispose();
     }//GEN-LAST:event_stopButtonActionPerformed
-
      
     public void actionPerformed(ActionEvent e) {
             checker = true;

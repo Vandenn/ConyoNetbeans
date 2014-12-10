@@ -442,6 +442,7 @@ public class MainFrame extends javax.swing.JFrame implements KeyListener, Action
         input.getHighlighter().removeAllHighlights();
         try { 
             input.getHighlighter().addHighlight(input.getLineStartOffset(lineNumber), input.getLineEndOffset(lineNumber), painter);
+            input.setCaretPosition(input.getLineEndOffset(lineNumber));
         } catch (BadLocationException ex) { 
             ex.printStackTrace(); 
         }
